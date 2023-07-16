@@ -1,0 +1,128 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+/* Estilos CSS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://img.freepik.com/fotos-premium/fondo-humo-rosa-azul-fondo-negro_777078-6762.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Estilos para el encabezado */
+
+#linksNav a{
+  text-decoration: none;
+  color: gray;
+  font-size: 1.2rem;
+}
+
+/* Estilos para los modales */
+.modalito {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn.btn-primary.tamano {
+  font-size: 20px;
+  padding: 10px 30px;
+  background-color: #555;
+  border-color: #555;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn.btn-primary.tamano:hover {
+  background-color: #777;
+  border-color: #777;
+  transform: scale(1.1);
+}
+
+.modal-content {
+  border-radius: 10px;
+  background-color: #fff;
+  animation: fade-in 1s ease-in-out;
+}
+
+.modal-header {
+  border-radius: 10px 10px 0 0;
+  background-color: #555;
+  color: #fff;
+}
+
+.modal-footer {
+  border-radius: 0 0 10px 10px;
+}
+
+.form-select-lg.mb-3 {
+  margin-bottom: 20px;
+}
+
+.form-control.formTam {
+  width: 100%;
+}
+
+/* Estilos para la tabla de categorías */
+.categories {
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #fff;
+  animation: fade-in 1s ease-in-out;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.table thead th {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilos para el pie de página */
+#pie-pagina {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.logo-footer {
+  width: 50px;
+  height: auto;
+}
+
+.pie {
+  margin: 0;
+  color: #fff;
+}
+
+/* Animación de desvanecimiento */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.content{
+  width: 90%;
+  margin: 2rem auto;
+}
+
+footer{
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
