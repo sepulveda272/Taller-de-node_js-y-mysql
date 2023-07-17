@@ -1,41 +1,41 @@
-const url = "http://localhost:5000/api/categorias"
-const urlN = "http://localhost:5000/api/categorias/add"
-const urlD = "http://localhost:5000/api/categorias/del"
-const urlA = "http://localhost:5000/api/categorias/upd"
+const url = "http://localhost:5000/api/correos"
+const urlN = "http://localhost:5000/api/correos/add"
+const urlD = "http://localhost:5000/api/correos/del"
+const urlA = "http://localhost:5000/api/correos/upd"
 
 
 
-export const obtainCategories = async () => {
+export const obtainCorreos = async () => {
     try {
-        const categorias = await fetch(url);
-        const datoCategorias = await categorias.json();
-        return datoCategorias;
+        const correos = await fetch(url);
+        const datoCorreos = await correos.json();
+        return datoCorreos;
     } catch (error) {
         console.log(error,"no sirve");
     }
 };
 
 
-export const nuevaCategoria = async (categoria) => {
+export const nuevaCorreo = async (correo) => {
     try {
         await fetch(urlN,{
             method: "POST",
-            body:JSON.stringify(categoria),
+            body:JSON.stringify(correo),
             headers:{'Content-Type':'application/json'}
         });
-        window.location.href ="categoriass.html"
+        window.location.href ="correos.html"
     } catch (error) {
         console.log(error,"no sirve");
     }
 };
 
 
-export const deleteCategory = async (id) => {
+export const deleteCorreos = async (id) => {
   try {
         await fetch(`${urlD}/${id}`,{
             method:'DELETE'
         })
-        window.location.href ="categoriass.html"
+        window.location.href ="correos.html"
     } catch (error) {
         console.log(error);
     }
@@ -55,16 +55,16 @@ export const deleteCategory = async (id) => {
 
 
 
-export const editarCategory = async (datos) => {
+export const editarCorreo = async (datos) => {
     try {
-        await fetch(`${urlA}/${datos.CategoriaID}`, {
+        await fetch(`${urlA}/${datos.CorreoID}`, {
             method: "PUT",
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(datos)
         }).then(response => response.json()).then(updatedDatos => {
             console.log('Datos actualizados:', updatedDatos);
         });
-        window.location.href ="categoriass.html"
+        window.location.href ="correos.html"
     } catch (error) {
       console.error('Error al actualizar los datos:', error);
     }

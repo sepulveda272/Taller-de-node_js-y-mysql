@@ -34,18 +34,18 @@
     <div id="linksNav" class="bg-dark px-4 pb-4">
       <ul class="nav nav-underline">
         <li class="nav-item">
-          <a class="nav-link active px-2 mx-2" aria-current = "page" href="index.html" style="color: white;">Categorias</a>
+          <a class="nav-link" href="../categorias/categoriass.html">Categorias</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Clientes</a>
+          <a class="nav-link" href="../regiones/regiones.html">Regiones</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Correos</a>
+          <a class="nav-link" href="../correos/correos.html">Correos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Empleados</a>
+          <a class="nav-link" href="../empleados/empleados.html">Empleados</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Facturas</a>
         </li>
         <li class="nav-item">
@@ -53,9 +53,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Productos</a>
-        </li>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="#">Proveedores</a>
+          <a class="nav-link active px-2 mx-2" aria-current = "page" href="./proveedores.html" style="color: white;">Proveedores</a>
         </li>
       </ul>
     </div>
@@ -75,7 +75,7 @@
         data-bs-target="#modalCategoria"
         data-bs-whatever="@getbootstrap"
       >
-        Agregar Categoria
+        Agregar Proveedor
       </button>
       
     </center>
@@ -90,7 +90,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header bg-primary text-white">
-            <h2 class="modal-title" id="exampleModalLabel">Nueva Categoria</h2>
+            <h2 class="modal-title" id="exampleModalLabel">Nuevo Proveedor</h2>
             <button
               type="button"
               class="btn-close"
@@ -102,18 +102,58 @@
             <form id="formulario" class="form-select-lg mb-3" method="POST">
            
               <div class="mb-3">
-                <label for="CategoriaNombre" class="col-form-label">Categoria Nombre:</label>
-                <input type="text" class="form-control formTam" id="CategoriaNombre" />
+                <label for="Compania" class="col-form-label">Compania:</label>
+                <input type="text" class="form-control formTam" id="Compania" />
               </div>
              
               <div class="mb-3">
-                <label for="Descripcion" class="col-form-label">Descripcion:</label>
-                <input type="text" class="form-control formTam" id="Descripcion" />
+                <label for="Contacto" class="col-form-label">Contacto:</label>
+                <input type="text" class="form-control formTam" id="Contacto" />
               </div>
 
               <div class="mb-3">
-                <label for="Imagen" class="col-form-label">Imagen:</label>
-                <input type="text" class="form-control formTam" id="Imagen" />
+                <label for="Titulo" class="col-form-label">Titulo:</label>
+                <input type="text" class="form-control formTam" id="Titulo" />
+              </div>
+
+              <div class="mb-3">
+                <label for="Direccion" class="col-form-label">Direccion:</label>
+                <input type="text" class="form-control formTam" id="Direccion" />
+              </div>
+
+              <div class="mb-3">
+                <label for="Ciudad" class="col-form-label">Ciudad:</label>
+                <input type="text" class="form-control formTam" id="Ciudad" />
+              </div>
+
+              <div class="mb-3">
+                <label for="Regiones" class="col-form-label">Regiones:</label>
+                <input type="text" class="form-control formTam" id="Regiones" />
+              </div>
+
+              <div class="mb-3">
+                <label for="CodigoPostal" class="col-form-label">CodigoPostal:</label>
+                <input type="text" class="form-control formTam" id="CodigoPostal" />
+              </div>
+
+              <div class="mb-3">
+                <label for="Pais" class="col-form-label">Pais:</label>
+                <input type="text" class="form-control formTam" id="Pais" />
+              </div>
+
+              <div class="mb-3">
+                <label for="Telefono" class="col-form-label">Telefono:</label>
+                <input type="text" class="form-control formTam" id="Telefono" />
+              </div>
+
+              <div class="mb-3">
+                <label for="Fax" class="col-form-label">Fax:</label>
+                <input type="text" class="form-control formTam" id="Fax" />
+              </div>
+
+              <div class="mb-3">
+                <label for="Pagina" class="col-form-label">Pagina:</label>
+                <input type="text" class="form-control formTam" id="Pagina" />
               </div>
 
           </div>
@@ -158,18 +198,58 @@
           <form id="formularioUpdate" class="form-select-lg mb-3" method="POST">
            
             <div class="mb-3">
-              <label for="CategoriaNombre" class="col-form-label">Categoria Nombre:</label>
-              <input type="text" class="form-control formTam" id="CategoriaNombreUpdate" />
+              <label for="Compania" class="col-form-label">Compania:</label>
+              <input type="text" class="form-control formTam" id="CompaniaUpdate" />
             </div>
            
             <div class="mb-3">
-              <label for="Descripcion" class="col-form-label">Descripcion:</label>
-              <input type="text" class="form-control formTam" id="DescripcionUpdate" />
+              <label for="Contacto" class="col-form-label">Contacto:</label>
+              <input type="text" class="form-control formTam" id="ContactoUpdate" />
             </div>
 
             <div class="mb-3">
-              <label for="Imagen" class="col-form-label">Imagen:</label>
-              <input type="text" class="form-control formTam" id="ImagenUpdate" />
+              <label for="Titulo" class="col-form-label">Titulo:</label>
+              <input type="text" class="form-control formTam" id="TituloUpdate" />
+            </div>
+
+            <div class="mb-3">
+              <label for="Direccion" class="col-form-label">Direccion:</label>
+              <input type="text" class="form-control formTam" id="DireccionUpdate" />
+            </div>
+
+            <div class="mb-3">
+              <label for="Ciudad" class="col-form-label">Ciudad:</label>
+              <input type="text" class="form-control formTam" id="CiudadUpdate" />
+            </div>
+
+            <div class="mb-3">
+              <label for="Regiones" class="col-form-label">Regiones:</label>
+              <input type="text" class="form-control formTam" id="RegionesUpdate" />
+            </div>
+
+            <div class="mb-3">
+              <label for="CodigoPostal" class="col-form-label">CodigoPostal:</label>
+              <input type="text" class="form-control formTam" id="CodigoPostalUpdate" />
+            </div>
+
+            <div class="mb-3">
+              <label for="Pais" class="col-form-label">Pais:</label>
+              <input type="text" class="form-control formTam" id="PaisUpdate" />
+            </div>
+
+            <div class="mb-3">
+              <label for="Telefono" class="col-form-label">Telefono:</label>
+              <input type="text" class="form-control formTam" id="TelefonoUpdate" />
+            </div>
+
+            <div class="mb-3">
+              <label for="Fax" class="col-form-label">Fax:</label>
+              <input type="text" class="form-control formTam" id="FaxUpdate" />
+            </div>
+
+            <div class="mb-3">
+              <label for="Pagina" class="col-form-label">Pagina:</label>
+              <input type="text" class="form-control formTam" id="PaginaUpdate" />
             </div>
 
             <input id="idUpdate" name="idUpdate" type="hidden" value="">
@@ -200,15 +280,23 @@
         <thead class="thead-light">
           <tr>
             <th>ID</th>
-            <th>NOMBRE</th>
-            <th>DESCRIPCION</th>
-            <th>IMAGEN</th>
+            <th>Compania</th>
+            <th>Contacto</th>
+            <th>Titulo</th>
+            <th>Direccion</th>
+            <th>Ciudad</th>
+            <th>Regiones</th>
+            <th>CodigoPostal</th>
+            <th>Pais</th>
+            <th>Telefono</th>
+            <th>Fax</th>
+            <th>Pagina</th>
             
             <th>EDITAR</th>
             <th>ELIMINAR</th>
           </tr>
         </thead>
-        <tbody id="categories" class="listado-estudiantes">
+        <tbody id="proveedor" class="listado-estudiantes">
           
         </tbody>
       </table>
@@ -219,7 +307,7 @@
     <h5 style="color: rgb(218, 218, 218); padding-top: 0.5rem;"><span style="color: rgb(255, 0, 0);">F</span>actur<span style="color: rgb(255, 0, 0);">A</span>rtemis+ <span id="yearActual"></span> Copyrigth - Derechos reservados a Juan David Sepulveda Rojas</h5>
   </footer>
 
-    <script src="./categorias.js" type="module"></script>
+    <script src="./proveedores.js" type="module"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
